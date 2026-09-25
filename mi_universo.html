@@ -1,0 +1,87 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Eveline ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #mensaje {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min(90%, 650px);
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            pointer-events: none;
+            text-shadow: 0 0 15px rgba(255, 120, 200, 0.8);
+            z-index: 5;
+        }
+
+        #titulo {
+            font-size: clamp(32px, 7vw, 70px);
+            margin: 0 0 15px;
+        }
+
+        #texto {
+            font-size: clamp(16px, 3vw, 24px);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        #ayuda {
+            position: fixed;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.7);
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            text-align: center;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="universo"></canvas>
+
+    <div id="mensaje">
+        <h1 id="titulo">Para Eveline ❤️</h1>
+        <p id="texto">
+            En todo este universo, mi lugar favorito siempre será contigo.
+        </p>
+    </div>
+
+    <div id="ayuda">
+        ❤️ Vive nuestro universo
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
